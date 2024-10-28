@@ -30,7 +30,7 @@ header {
     list-style: none;
     display: flex;
     flex-wrap: nowrap;
-    overflow-x: auto; /* Permite desplazamiento horizontal en caso de que el menú sea más grande que la pantalla */
+    overflow-x: auto;
     margin: 0;
     padding: 0;
 }
@@ -54,7 +54,7 @@ header {
 
 .hero img {
     width: 100%;
-    height: auto; /* Mantiene la relación de aspecto */
+    height: auto;
 }
 
 /* Media Query para cambiar solo la imagen con clase "img1" en pantallas pequeñas */
@@ -70,7 +70,7 @@ header {
     }
 
     .menu ul {
-        justify-content: space-evenly; /* Espaciado uniforme entre los elementos */
+        justify-content: space-evenly;
         width: 100%;
         padding: 0 10px;
     }
@@ -94,7 +94,7 @@ header {
     }
 
     .brands img {
-        height: 30px; /* Ajuste adicional para pantallas pequeñas */
+        height: 30px;
         max-width: 100px;
     }
 }
@@ -109,7 +109,7 @@ header {
 }
 
 .overlay h1 {
-    font-size: 2rem; /* Ajuste de tamaño */
+    font-size: 2rem;
     margin: 0;
 }
 
@@ -122,5 +122,5 @@ header {
 
 .brands img {
     margin: 10px;
-    height: 40px; /* Tamaño ajustado */
+    height: 40px;
 }
