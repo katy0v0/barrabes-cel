@@ -21,6 +21,11 @@ header {
     height: 40px;
 }
 
+/* Clase específica para la imagen "img1" */
+.logo img.img1 {
+    height: 40px;
+}
+
 .menu ul {
     list-style: none;
     display: flex;
@@ -52,42 +57,13 @@ header {
     height: auto; /* Mantiene la relación de aspecto */
 }
 
-/* Media Query para cambiar la imagen de logo en pantallas pequeñas */
+/* Media Query para cambiar solo la imagen con clase "img1" en pantallas pequeñas */
 @media (max-width: 768px) {
-    .top-bar img {
-        content: url('img celular.png'); /* Cambia la imagen del logo en dispositivos móviles */
+    .top-bar img.img1 {
+        content: url('img celular.png'); /* Cambia solo la imagen "img1" en dispositivos móviles */
         height: 40px; /* Mantiene la altura original */
     }
-}
 
-.overlay {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #fff;
-    text-shadow: 2px 2px 5px #000;
-}
-
-.overlay h1 {
-    font-size: 2rem; /* Ajuste de tamaño */
-    margin: 0;
-}
-
-.brands {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 20px;
-}
-
-.brands img {
-    margin: 10px;
-    height: 40px; /* Tamaño ajustado */
-}
-
-/* Media Query para pantallas pequeñas */
-@media (max-width: 768px) {
     .top-bar {
         flex-direction: column;
         align-items: center;
@@ -121,4 +97,30 @@ header {
         height: 30px; /* Ajuste adicional para pantallas pequeñas */
         max-width: 100px;
     }
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-shadow: 2px 2px 5px #000;
+}
+
+.overlay h1 {
+    font-size: 2rem; /* Ajuste de tamaño */
+    margin: 0;
+}
+
+.brands {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.brands img {
+    margin: 10px;
+    height: 40px; /* Tamaño ajustado */
 }
